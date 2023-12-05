@@ -1,0 +1,54 @@
+@api= http://localhost:3000/products
+
+#Obtener todos los productos
+GET {{api}}
+
+#Contar productos
+###
+GET {{api}}/count
+
+#Obtener un producto proporcionando su id
+###
+GET {{api}}/2
+
+#Crear un nuevo producto
+###
+POST  {{api}}
+Content-Type: application/json
+
+{
+    "name":"Bolillo",
+    "price":7
+}
+
+###
+POST  {{api}}
+Content-Type: application/json
+
+{
+    "name":"Margarita",
+    "price":57
+}
+
+#Borrar un producto
+###
+DELETE {{api}}/7
+
+#Actualizar un producto
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "product_name":"Americano",
+    "product_price":30
+}
+
+#Actualizar un producto
+###
+PUT {{api}}/6
+Content-Type: application/json
+
+{
+    "product_status":false
+}
