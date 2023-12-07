@@ -35,7 +35,7 @@ Content-Type: application/json
 
 #Borrar una comanda
 ###
-DELETE {{api}}/10
+DELETE {{api}}/4
 
 #Actualizar una comanda
 ###

@@ -21,6 +21,16 @@ Content-Type: application/json
     "price":7
 }
 
+#Crear un nuevo producto
+###
+POST  {{api}}
+Content-Type: application/json
+
+{
+    "name":"Americano",
+    "price":7
+}
+
 ###
 POST  {{api}}
 Content-Type: application/json
@@ -46,7 +56,7 @@ Content-Type: application/json
 
 #Actualizar un producto
 ###
-PUT {{api}}/6
+PUT {{api}}/1
 Content-Type: application/json
 
 {
